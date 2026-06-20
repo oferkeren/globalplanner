@@ -1,14 +1,14 @@
 {
-  "name": "travel-planner-v12-phase1-railway-postgres",
-  "version": "12.0.0",
+  "name": "travel-planner-v12-phase1-railway-final",
+  "version": "12.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "prisma migrate deploy && next start -p ${PORT:-3000}",
+    "build": "prisma generate && next build",
+    "start": "next start -p ${PORT:-3000}",
     "lint": "next lint",
     "db:generate": "prisma generate",
-    "db:migrate": "prisma migrate dev",
+    "db:migrate": "prisma migrate deploy",
     "db:studio": "prisma studio",
     "postinstall": "prisma generate"
   },
@@ -19,13 +19,16 @@
     "next-auth": "^5.0.0-beta.25",
     "@auth/core": "latest",
     "zod": "latest",
-    "@prisma/client": "latest"
+    "@prisma/client": "^6.19.0"
   },
   "devDependencies": {
     "typescript": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "prisma": "latest"
+    "prisma": "^6.19.0"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }

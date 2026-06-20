@@ -32,3 +32,14 @@ GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 DATABASE_URL=
 ```
+
+## V12 Phase 1 Final
+
+This package is prepared for Railway with:
+- Google OAuth
+- Railway PostgreSQL
+- Prisma 6.x
+- Node 22
+- Builder auto-detection
+
+See `FINAL_RAILWAY_SETUP.md`.
