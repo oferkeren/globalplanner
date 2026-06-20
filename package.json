@@ -1,6 +1,6 @@
 {
-  "name": "globalplanner-v12-phase1-ui-auth-fix",
-  "version": "12.1.1",
+  "name": "globalplanner-v12-nextauth-secret-fix",
+  "version": "12.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -14,7 +14,7 @@
     "next": "^14.2.23",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "next-auth": "^4.24.11",
+    "next-auth": "4.24.11",
     "@auth/core": "latest",
     "zod": "^3.24.1",
     "@prisma/client": "^6.19.0"

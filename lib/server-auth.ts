@@ -1,8 +1,9 @@
-import type { NextAuthOptions } from "next-auth";
+import { getServerSession } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
+import type { NextAuthOptions } from "next-auth";
 import { getRequiredEnv } from "./env";
 
-export const authOptions: NextAuthOptions = {
+export const serverAuthOptions: NextAuthOptions = {
   secret: getRequiredEnv("NEXTAUTH_SECRET"),
   session: {
     strategy: "jwt",
@@ -14,3 +15,7 @@ export const authOptions: NextAuthOptions = {
     }),
   ],
 };
+
+export function getSession() {
+  return getServerSession(serverAuthOptions);
+}
