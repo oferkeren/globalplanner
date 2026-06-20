@@ -4,3 +4,7 @@ node_modules
 .env.local
 .env.production
 npm-debug.log*
+.env.*
+!.env.example
+yarn-debug.log*
+yarn-error.log*
