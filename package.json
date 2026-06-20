@@ -1,6 +1,6 @@
 {
-  "name": "globalplanner-v12-nextauth-secret-fix",
-  "version": "12.1.2",
+  "name": "globalplanner-v12-lazy-auth-env-fix",
+  "version": "12.1.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
